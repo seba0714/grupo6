@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CERAMICOOL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <a href="index.html"> <img src="casaicon.png" alt="" class="logo"></a>
+        <h1 class="nombreempresa">CERAMICOOL</h1>
+    </header>
+
+<section class="section margen-interno">
+    <div class="articles">
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">SUBWAY BLANCO 7 X 11</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="0.jpeg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="0" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="0_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(0)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="0_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">SUBWAY NEGRO 7 X 15 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./1.jpeg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="1" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="1_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(1)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="1_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">NEWPORT 10 X 10 CM</h1>
+                <div class="article__img-wrapper">
+
+                    <img class="article__img" src="./2.jpeg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="2" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="2_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(2)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="2_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">MARRAKECH 37.5 X 75 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./3.jpeg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="3" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="3_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(3)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="3_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">FIORANO 37.5 X 75 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./4.jpg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="4" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="4_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(4)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="4_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">LACAR 37.5 X 75 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./5.jpg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="5" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="5_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(5)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="5_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">LUMINUM 37.5 X 75 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./6.jpg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="6" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="6_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(6)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="6_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">MANHATTAN 37.5 X 75 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./7.jpg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="7" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="7_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(7)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="7_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">NEWPORTBAR 37.5 X 75 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./8.jpg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="8" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="8_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(8)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="8_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+        <article class="article">
+            <form method="post" class="formulario">
+                <h1 class="FormularioTitulo">VENATINA 37.5 X 75 CM</h1>
+                <div class="article__img-wrapper">
+                    <img class="article__img" src="./9.jpg">
+                </div>
+                <div class="article__imput-wrapper">
+                    <h3>Ingrese los m2 y presione calcular</h3>
+                    <label>Valor por m2</label>
+                    <input class="formInput" type="number" id="9" name="valor" min="0" max="10000" width="5px" readonly>
+                    <label for="m2">M2 de superficie</label>
+                    <input class="formInput" type="number" id="9_m2" name="m2" min="0" max="100000" value="1"
+                        width="5px">
+                    <button class="formSubmit" type="button" id="btnactualizar"
+                        onclick="actualizarCantidad(9)">Calcular</button>
+                    <br>
+                    <label for="formInput">Cotización final</label>
+                    <input class="formInput" type="number" id="9_cotizacion" name="cotizacion" min="0" max="10000000"
+                        value="0" width="5px" readonly>
+            </form>
+        </article>
+    </div>
+    
+</section>
+
+<footer>
+    <div class="institucionalfooter">
+        <h1><class="nombreempresa">CERAMICOOL</h1>
+        <div class="ubicacion">
+        <img src="ubiicon.png" alt="" class="ubi">
+        <h4 class="direccion">Raúl Casariego 4251, Cordoba Capital</h4>
+        </div>
+
+        <div class="telefono">
+        <img src="telefonoicon.png" alt="" class="tel">
+        <h4 class="telefonofijo">+544761442</h4>
+        </div>
+
+        <div class="whatsapp">
+        <img src="whatsappicon.png" alt="" class="wapp">
+        <h4 class="wapp">+5493515586235</h4>
+        </div>
+
+        <div class="socialmedia">
+            <div><img src="facebookicon.png" alt="" class="icon"></div>
+            <div><img src="instagramicon.png" alt="" class="icon"></div>
+            <div><img src="youtubeicon.png" alt="" class="icon"></div>
+        </div>
+    </div>
+</footer>
